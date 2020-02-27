@@ -68,12 +68,13 @@
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
-                        <a href="{{ url('/home') }}">Home</a>
+                        <a href="{{ route('users.index') }}">Пользователи</a>
+                        <a href="{{ route('departments.index') }}">Отделы</a>
                     @else
-                        <a href="{{ route('login') }}">Login</a>
+                        <a href="{{ route('login') }}">Авторизация</a>
 
                         @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
+                            <a href="{{ route('register') }}">Регистрация</a>
                         @endif
                     @endauth
                 </div>
