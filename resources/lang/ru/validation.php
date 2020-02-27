@@ -127,5 +127,11 @@ return [
     |
     */
 
-    'attributes' => [],
+    'attributes' => [
+        'name' => 'Имя/Название',
+        'description' => 'Описание отдела',
+        'logo' => 'Логотип',
+        'email' => 'E-mail',
+        'password' => 'Пароль',
+    ],
 ];
